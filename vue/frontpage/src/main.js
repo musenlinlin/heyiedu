@@ -9,7 +9,12 @@ import App from './App.vue'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.min.js';
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 Vue.use(ElementUI);
+
+Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
 

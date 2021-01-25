@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <!-- <Demo/>
-    <Xuancard/> -->
+    <Demo/>
+   <!--  <Xuancard/> -->
     <!-- <LoginIndex/> -->
     <Form/>
   </div>
