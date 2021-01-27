@@ -15,6 +15,19 @@ Route::get('think', function () {
 
 Route::get('hello/:name', 'index/hello');
 
+Route::rule('new/create', 'index/News/create');
+Route::rule('new/:id', 'index/News/read');
+
+// Route::get('blog/create', 'index/Blog/create');
+// Route::get('blog', 'index/Blog/index');
+
+
+// 资源路由
+// Route::resource('blog', 'index/blog');
+// Route::resource('blog','index/blog');
+// Route::resource('api', 'index/api');
+Route::resource('api/test', 'api/test');
+
 return [
 
 ];

@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <Demo/>
+    <!-- <Demo/> -->
    <!--  <Xuancard/> -->
     <!-- <LoginIndex/> -->
-    <Form/>
+    <!-- <Form/> -->
+    <Test/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import LoginIndex from './components/LoginIndex.vue'
 import Demo from './components/Demo.vue'
 import Xuancard from './components/Xuancard'
 import Form from './components/Form'
+import Test from './components/Test'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     LoginIndex,
     Demo,
     Xuancard,
-    Form
+    Form,
+    Test
   }
 }
 </script>

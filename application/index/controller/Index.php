@@ -1,5 +1,6 @@
 <?php
 namespace app\index\controller;
+use think\captcha\Captcha;
 
 class Index
 {
@@ -12,4 +13,12 @@ class Index
     {
         return 'hello,' . $name;
     }
+
+    public function verify()
+    {
+        $captcha = new Captcha();
+        return $captcha->entry();
+    }
+
+
 }

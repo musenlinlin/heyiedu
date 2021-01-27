@@ -12,6 +12,8 @@ import App from './App.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+axios.defaults.baseURL = '/api'
+
 Vue.use(ElementUI);
 
 Vue.use(VueAxios, axios)

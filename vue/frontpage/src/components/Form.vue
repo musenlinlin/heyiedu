@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .el-select .el-input {
     width: 130px;
 }
