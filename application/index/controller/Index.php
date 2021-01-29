@@ -1,12 +1,18 @@
 <?php
 namespace app\index\controller;
 use think\captcha\Captcha;
+// use think\facade\Cache;
+
+// use app\common\Test;
+// use app\facade\Test as Test2;
 
 class Index
 {
     public function index()
     {
-        return '合一设计教育';
+        \Cache::set('name', 'value');
+        echo \Cache::get('name');
+
     }
 
     public function hello($name = 'ThinkPHP5')
