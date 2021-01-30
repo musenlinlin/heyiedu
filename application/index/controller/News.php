@@ -11,11 +11,23 @@ class News extends Controller
 
     public function read($id)
     {
-        return 'News read' . $id;
+        $url = url('new_read', ['id' => $id]);
+        // return 'News read ' . $id;
+        return $url;
     }
 
     public function create()
     {
         return 'News create';
     }
+
+    public function category($cate)
+    {
+        return 'category ' . $cate;
+    }
+
+
+
+
+
 }

@@ -44,9 +44,9 @@ class Blog extends Controller
      * @param  int  $id
      * @return \think\Response
      */
-    public function read($id)
+    public function read($id, $status, $app_id)
     {
-        return '资源 '. $id;
+        return '资源 '. $id . '状态 ' . $status . '应用 ' . $app_id;
     }
 
     /**
@@ -82,4 +82,15 @@ class Blog extends Controller
     {
         //
     }
+
+    public function archive($year, $month=1)
+    {
+        return 'blog ' . $year . 'year '. $month .' month';
+    }
+
+    
+
+
+
+
 }
