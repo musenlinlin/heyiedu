@@ -28,7 +28,7 @@ class Test extends Controller
      */
     public function create()
     {
-        //
+        return '创建成功';
     }
 
     /**
